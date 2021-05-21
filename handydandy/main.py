@@ -1,3 +1,5 @@
+def help():
+  print("you can find all the commands on our wiki(https://github.com/lucasammer/handydandy/wiki)")
 class colors:
   HEADER = '\033[95m'
   OKBLUE = '\033[94m'
