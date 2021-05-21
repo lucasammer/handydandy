@@ -6,6 +6,11 @@ use
 pip install handydandy
 ```
 to install
+use
+```
+pip install handydandy --upgrade
+```
+to update
 ## usage
 you can find everything you need to know on the [wiki](https://github.com/lucasammer/handydandy/wiki)
 ## license
