@@ -1,4 +1,3 @@
-import sys
 class handydandy:
   class colors:
     HEADER = '\033[95m'
@@ -35,4 +34,3 @@ class handydandy:
         return()
     def ask(question):
       input(question)
-
