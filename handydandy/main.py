@@ -1,4 +1,3 @@
-
 class colors:
   HEADER = '\033[95m'
   OKBLUE = '\033[94m'
@@ -12,7 +11,7 @@ class colors:
   class replonly:
     def printc(text, color):
       print(f'{color}{text}{colors.ENDC}')
-class input:
+class userinput:
   def askda(question, defaultanswer):
     x = input(f'{question}:\n({defaultanswer}) ')
     if x == "":
