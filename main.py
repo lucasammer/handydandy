@@ -15,7 +15,6 @@ class handydandy:
   class input:
     def quit():
        sys.close
-  class ui:
     def pause():
       input("press enter to continue\n")
     def quitask():
