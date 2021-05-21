@@ -15,6 +15,15 @@ class handydandy:
     def printc(text, color):
       print(f'{color}{text}{handydandy.colors.ENDC}')
   class input:
+    def asksq(question, defaultanswer):
+      x = input(f'{question}:\n({defaultanswer})')
+      if x == "":
+        y = defaultanswer
+      else:
+        y = x
+      return(y)
+    def askstandardquestion(question, defaultanswer):
+      handydandy.asksq(question, defaultanswer)
     def pause():
       input("press enter to continue\n")
     def quitpause():
@@ -28,3 +37,4 @@ class handydandy:
         return()
     def ask(question):
       input(question)
+print(handydandy.input.asksq("how are you", "good"))
