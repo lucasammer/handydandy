@@ -36,4 +36,3 @@ class handydandy:
     def ask(question):
       input(question)
 
-handydandy.input.quitask(quit)
