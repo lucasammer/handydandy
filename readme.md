@@ -14,7 +14,7 @@ or you can download or copy main.py and rename it to whatever tou want so for ex
 import FILENAME
 ```
 so you'll get for example
-```
+```python
 import handydandy
 ```
 ## usage
