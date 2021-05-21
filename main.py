@@ -1,7 +1,5 @@
 import sys
 class handydandy:
-  def quit():
-    sys.close
   class colors:
     HEADER = '\033[95m'
     OKBLUE = '\033[94m'
@@ -16,7 +14,7 @@ class handydandy:
       print(f'{color}{text}{handydandy.colors.ENDC}')
   class input:
     def asksq(question, defaultanswer):
-      x = input(f'{question}:\n({defaultanswer})')
+      x = input(f'{question}:\n({defaultanswer}) ')
       if x == "":
         y = defaultanswer
       else:
@@ -26,15 +24,16 @@ class handydandy:
       handydandy.asksq(question, defaultanswer)
     def pause():
       input("press enter to continue\n")
-    def quitpause():
+    def quitpause(reason):
       input("press enter to quit\n")
-      quit() 
-    def quitask():
-      quitaskv1 = input("do you want to quit:  (y/n)\n")
+      quit(reason)
+    def quitask(reason):
+      quitaskv1 = handydandy.input.asksq("do you want to quit:  (y/n)", "y")
       if quitaskv1 == "y":
-        handydandy.quit()
+        quit(reason)
       else:
         return()
     def ask(question):
       input(question)
-print(handydandy.input.asksq("how are you", "good"))
+
+handydandy.input.quitask(quit)
