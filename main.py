@@ -1,5 +1,7 @@
 import sys
 class handydandy:
+  def quit():
+    sys.close
   class colors:
     HEADER = '\033[95m'
     OKBLUE = '\033[94m'
@@ -13,12 +15,16 @@ class handydandy:
     def printc(text, color):
       print(f'{color}{text}{handydandy.colors.ENDC}')
   class input:
-    def quit():
-       sys.close
     def pause():
       input("press enter to continue\n")
-    def quitask():
+    def quitpause():
       input("press enter to quit\n")
-      quit()
+      quit() 
+    def quitask():
+      quitaskv1 = input("do you want to quit:  (y/n)\n")
+      if quitaskv1 == "y":
+        handydandy.quit()
+      else:
+        return()
     def ask(question):
       input(question)
