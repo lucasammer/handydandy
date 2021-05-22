@@ -1,3 +1,6 @@
+def quit(reason):
+  print("exited exit reason: ", reason)
+  exit(reason)
 def help():
   print("you can find all the commands on our wiki(https://github.com/lucasammer/handydandy/wiki)")
 class colors:
@@ -21,7 +24,7 @@ class userinput:
     else:
       y = x
     return(y)
-  def askstandardquestion(question, defaultanswer):
+  def askdefaultanswer(question, defaultanswer):
     input.askda(question, defaultanswer)
   def pause():
     input("press enter to continue\n")
@@ -29,8 +32,8 @@ class userinput:
     input("press enter to quit\n")
     quit(reason)
   def quitask(reason):
-    quitaskv1 = input.asksq("do you want to quit:  (y/n)", "y")
-    if quitaskv1 == "y":
+    qv1 = input.akda("do you want to quit:  (y/n)", "y")
+    if qv1 == "y":
       quit(reason)
     else:
       return()
